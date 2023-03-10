@@ -38,7 +38,7 @@ def generate_dataframe(df_1, df_2):
   day = datetime.date.today().day      
   hour = datetime.datetime.now().hour 
   df_final = df_1.merge(df_2, on = 'title', how= 'left')
-  df_final.to_parquet(f"analise_sentimento_{year}_{month}_{day}_{hour}.parquet")
+  df_final.to_parquet(f"dw/analise_sentimento_{year}_{month}_{day}_{hour}.parquet")
 
 
 year = datetime.date.today().year     
