@@ -1,2 +1,2 @@
-@hourly python3 ~/gnews_app/gnews_app.py
-@hourly python3 ~/sentiment_app/sentiment_app.py
+0 * * * * python3 ~/gnews_app/gnews_app.py
+10 * * * * python3 ~/sentiment_app/sentiment_app.py
